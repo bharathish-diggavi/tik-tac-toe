@@ -1,0 +1,53 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 60px;
+	cursor: pointer;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.square:hover {
+	background-color: #eee;
+}
+
+#reset {
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+#message {
+	font-size: 20px;
+}
